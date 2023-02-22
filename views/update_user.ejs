@@ -1,0 +1,84 @@
+<!-- include header-->
+<%- include('include/_header') %> 
+<!-- /include header-->
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <div class="filter">
+                <a href="/"><i class="fas fa-angle-double-left"></i>All User</a>
+            </div>
+        </div>
+
+        <div class="form-title text-center">
+            <h2 class="text-dark">Update User</h2>
+            <span class="text-light">Fill below form to update a new user</span>
+        </div>
+        <div>
+            <form method="POST" id="update_user">
+                <div class="new_user">
+                    <div class="form-group">
+                        <lable for="first name" class="text-dark">First Name</lable>
+                        <input type="hidden" name="id" value="<%=user._id%>">
+                        <input type="text" name="first_name" value="<%=user.first_name%> " placeholder="Harsh Patel">
+                    </div>
+                    <div class="form-group">
+                        <lable for="last name" class="text-dark">Last Name</lable>
+                        <input type="text" name="last_name" value="<%=user.last_name%>" placeholder="Harsh Patel">
+                    </div>
+                    <div class="form-group">
+                        <lable for="Email" class="text-dark">Email</lable>
+                        <input type="text" name="email" value="<%=user.email%>" placeholder="Harsh@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <lable for="address1" class="text-dark">Address 1</lable>
+                        <input type="text" name="address1" value="<%=user.address1%>" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <lable for="address2" class="text-dark">Address 2</lable>
+                        <input type="text" name="address2" value="<%=user.address2%>" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <lable for="city" class="text-dark">City</lable>
+                        <input type="text" name="city" value="<%=user.city%>" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <lable for="postal code" class="text-dark">Postal Code</lable>
+                        <input type="text" name="postal_code" value="<%=user.postal_code%>" placeholder="">
+                    </div>
+                    <div class="form-group">
+                    <lable for="country" class="text-dark">Country</lable>
+                    <select id="country" name="country" class="text-dark">
+                        <option value="india">India</option>
+                        <option value="canada">Canada</option>
+                        <option value="USA">USA</option>
+                        <option value="china">China</option>
+                        <option value="russia">Russia</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                        <lable for="birthday" class="text-dark">Birthday</lable>
+                        <input type="date" name="birthday" value="<%=user.birthday%>" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <lable for="Phone" class="text-dark">Phone Number</lable>
+                        <input type="tel" name="phone_number" value="<%=user.phone_number%>" placeholder="Phone Number">
+                    </div>
+                    <div class="form-group">
+                        <lable for="user note" class="text-dark">User Notes</lable>
+                        <input type="text" name="user_notes" value="<%=user.user_notes%>" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <button type="Submit" class="btn text-dark update">Save</button>
+                    </div>
+                </div>
+            </form>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script src="/js/index.js"></script>
+    </div>
+    </div>
+</main>
+
+<!-- include footer
+<%- include('include/_footer') %> 
+<!-- /include footer-->

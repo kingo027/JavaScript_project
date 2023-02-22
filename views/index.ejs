@@ -1,0 +1,44 @@
+<!-- include header-->
+<%- include('include/_header') %> 
+<!-- /include header-->
+
+<main id="site-main">
+    <div class="container ">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient"><i class="fa-solid fa-user"></i>New User</span>
+            </a>
+        </div>
+
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Id</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>@Email</th>
+                        <th>Address1</th>
+                        <th>Address2</th>
+                        <th>City</th>
+                        <th>Postal Code</th>
+                        <th>Country</th>
+                        <th>Birthday</th>
+                        <th>Phone Number</th>
+                        <th>User Notes</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%- include('include/_show') %>
+                </tbody>
+            </table>
+        </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="/js/index.js"></script>
+    </div>
+</main>
+
+<!-- include footer
+<%- include('include/_footer') %> 
+<!-- /include footer-->

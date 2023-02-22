@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=PT+Sans&display=swap');
+
+:root{
+    --dark: #3d405b;
+    --light: #b4bdc7;
+    --border: #eaeff5;
+    --border-btn: #e4f1f6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    max-width: 1500px;
+    margin: auto;
+}
+
+.background{
+    background-color: #e5eeed;
+}
+
+.nav-brand{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #343639;
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.inline{
+    display: inline-block;
+}
+
+.text-light{
+    color: var(--light);
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #4397e5, #1f0165);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header nav{
+    background-color: #67b1b3;
+    padding: 1em 0;
+    width: 100%;
+}
+
+#site-main{
+    margin-top: 5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#site-main .container .box-nav > a{
+    font-size: 20px;
+    padding: .7em 2em;
+    margin-bottom: .7em;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td, .table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 2px solid var(--border);
+}
+
+.table td > a.btn{
+    
+    font-size: 1em;
+    margin: 0 .2em;
+}
+
+.table tr:hover{
+    background-color:#67b1b3 ;
+}
+
+.table tr:hover td > a{
+    box-shadow: none;
+}
+
+.table .thead-dark th{
+    color: #fff;
+    background-color: var(--dark) ;
+    border-color: #424b53;
+}
+
+/* Styling for add-user and update template */
+.form-title{
+    margin-top: 2em;
+}
+
+.form-title > h2{
+    padding: .5em 0;
+}
+
+.new_user{
+    max-width: 700px;
+    margin: auto;
+}
+
+#update_user .form-group,
+#add_user .form-group{
+    margin: .5em 0;
+}
+
+#update_user .form-group input[type="text"],
+#add_user .form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_user .form-group input[type="tel"] ,
+#add_user .form-group input[type="tel"] {
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_user .form-group input[type="date"],
+#add_user .form-group input[type="date"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_user .form-group select[id="country"],
+#add_user .form-group select[id="country"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_user .form-group .radio,
+#add_user .form-group .radio{
+    margin: 1em 2em;
+}
+
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color:#67b1b3; 
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover{
+    background-color: var(--dark);
+    color: var(--border);
+}
+
+.background{
+    background: url('../img/background.png');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+
